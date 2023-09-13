@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+}
+
+/*proprietà da mettere nella hompage per far funzionare le card*/
+
+.cardHomePage {
+    display: flex;
+    border: 0;
+    border-radius: 7px;
+    margin: 10px;
+    padding: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 191.667px;
+    height: 282.052px;
+    background-color: rgba(24, 24, 24, 255);
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));;
+
+}
+
+.upperSectionCard {
+    width: inherit;
+    height: inherit;
+}
+
+.cardConteiner {
+    width: 191.667px;
+    height: 191.667px;
+    margin-bottom: 16px;
+}
+
+.onlyPadding {
+    width: 191.667px;
+    height: 0;
+    padding-bottom: 191.667px;
+}
+
+.onlyWidth {
+    width: 191.667px;
+    height: 0;
+}
+
+.imgModule {
+    width: 191.667px;
+    height: 191.667px;
+    border-radius: 7px;
+}
+
+.bottomConteiner {
+    display: flex;
+    justify-content: flex-start;
+    width: 191.667px;
+    height: 74.385px;
+}
+
+.titleCardConteiner {
+    width: 120.385px;
+    height: 29.594px;
+}
+
+.TCC2 {
+    width: 120.385px;
+    height: 29.594px;
+    padding-bottom: 4px;
+}
+
+.TCC2 p{
+    color: rgba(252, 252, 252, 255);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.descriptionCard {
+    width: 191.667px;
+    height: 44.792px;
+}
+
+.descriptionCard p{
+    color: rgba(155, 155, 155, 255);
+    font-size: 14px;
+}
