@@ -3,7 +3,8 @@
   padding: 0px;
   box-sizing: border-box;
 }
-body {
+
+.side-navbar {
   font-family: var(
     --font-family,
     CircularSp,
@@ -22,9 +23,6 @@ body {
   width: 360px;
   height: 100vh;
   background-color: black;
-}
-
-.side-navbar {
   display: flex;
   flex-direction: column;
   gap: 8px;
