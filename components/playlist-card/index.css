@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body {
+#playlist-page {
     font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva;    
     display: flex;
     flex-direction: column;
@@ -155,6 +155,10 @@ main .playlist-section {
 .numbers {
     padding-left: 1vw;
     padding-right: 1vw;
+}
+
+.table-row:first-child {
+    padding: 2%;
 }
 
 /* .numbers svg {
