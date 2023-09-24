@@ -3,17 +3,34 @@
     padding: 0;
 }
 
-#playlist-page {
-    font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva;    
+.main-container {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.object-sidenav {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    /* position: sticky; */
+}
+
+#playlist-page {
+    font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     height: 100%;
-    width: 65%;
     padding: 1vmax;
-    background-color: white;
+    /* background-color: white; */
+    background-image: linear-gradient(#90b0c0 0% 25%, transparent 40% 100%);
+    background-color: #121212;
     position: relative;
-    margin-left: 20vw;
     vertical-align: baseline;
+    margin: 8px;
+    border-radius: 5px;
+    color: #ffffff;
 }
 
 .right-sidebar {
@@ -42,7 +59,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    flex: 1;    
+    flex: 1;
 }
 
 .header-title h3 {
@@ -55,6 +72,7 @@
 
 .paragraph-1 {
     font-size: 14px;
+    opacity: 50%;
 }
 
 .paragraph-2 {
@@ -62,6 +80,10 @@
     align-items: center;
     font-size: 14px;
     margin-top: 10px;
+}
+
+.p-opacity {
+    opacity: 50%;
 }
 
 .paragraph-2 svg {
@@ -84,7 +106,7 @@
     height: 4px;
     width: 4px;
     border-radius: 100%;
-    background-color: #000000;    
+    background-color: #ffffff;
 }
 
 main .playlist-section {
@@ -121,7 +143,6 @@ main .playlist-section {
     border: none;
     background-color: transparent;
     margin-right: 0.8vw;
-    
 }
 
 .three-dots {
@@ -149,12 +170,10 @@ main .playlist-section {
 
 .table-numb {
     padding-left: 1vw;
-    padding-right: 1vw;
 }
 
 .numbers {
     padding-left: 1vw;
-    padding-right: 1vw;
 }
 
 .table-row:first-child {
@@ -163,14 +182,21 @@ main .playlist-section {
 
 /* .numbers svg {
     display: none;
+} */
+
+/* .number::before {
+
+    &:hover {
+        display: none;
+        cursor: none;
+    }
 }
 
-.numbers:hover, .numbers:active {
-    display: none;
-}
-
-.numbers svg:hover, .numbers svg:active {
-    display: block;
+.svg-hover:hover {
+    &::before {
+        display: block;
+        cursor: pointer;
+    }
 } */
 
 .song {
@@ -224,7 +250,9 @@ main .playlist-section {
     font-size: 13px;
 }
 
+.table-row {}
+
 .table-row:hover {
     background-color: #b3b3b3;
-
+    /* opacity: 20%; */
 }
