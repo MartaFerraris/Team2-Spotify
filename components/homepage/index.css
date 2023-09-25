@@ -333,11 +333,11 @@ hr {
 }
 
 .headerButton {
-    width: auto;
+    width: 210px;
     height: 53px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 48px;
 }
 
