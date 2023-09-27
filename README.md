@@ -1,7 +1,7 @@
 # Team2-Spotify
-Progetto svolto dal team SAM(Team2) composto da:
+<p>Progetto svolto dal team SAM(Team2) composto da:<br>
+Stefano Sala, Adolfo Gomez, Marta Ferraris</p>
 
-Stefano Sala, Adolfo Gomez, Marta Ferraris
 <hr/>
 
 Consegna Demo: 5 ottobre;
