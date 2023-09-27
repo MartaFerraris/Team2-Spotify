@@ -9,17 +9,17 @@ Consegna Demo: 5 ottobre;
 
 <hr/>
 
-<p>- Prassi per l'aggiornamento di develop e dei branch:<br/>
+<p>1- Prassi per l'aggiornamento di develop e dei branch:<br/>
 git fetch su develop => 
 git pull (se ci sono degli aggiornamenti) => 
 git merge develop sul proprio branch</p>
 
-<p>- Naming dei branch:<br/>
+<p>2- Naming dei branch:<br/>
   es. components/"nome oggetto"</p> 
   
-<p>- Per la cancellazione dei branch: git branch -d old-branch</p>
+<p>3- Per la cancellazione dei branch: git branch -d old-branch</p>
 
-<p>- Per fixare degli argomenti o aggiungere delle feature:<br/>
+<p>4- Per fixare degli argomenti o aggiungere delle feature:<br/>
   - fare un nuovo branch e usare i termini "fix-..." e "feature-..." nel nome del branch:<br/>
   - mergiare develop sul nuovo branch;<br/>
   - dopo che si ha finito fare: git add . => git commit -m (es.)"fix: ..." => git push --all;
