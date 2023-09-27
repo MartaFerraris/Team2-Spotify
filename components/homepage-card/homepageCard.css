@@ -14,12 +14,16 @@ body {
     padding: 16px;
     flex-direction: row;
     flex-wrap: wrap;
-
     width: 191.667px;
     height: 282.052px;
     background-color: rgba(24, 24, 24, 255);
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));;
+    transition: background-color 300ms;
+    cursor:pointer;
+}
 
+.cardHomePage:hover{
+    background-color: rgb(48, 48, 48);
 }
 
 .upperSectionCard {
@@ -42,13 +46,42 @@ body {
 .onlyWidth {
     width: 191.667px;
     height: 0;
+    position: relative;
+    
 }
 
 .imgModule {
     width: 191.667px;
     height: 191.667px;
     border-radius: 7px;
+    z-index: 1;
 }
+
+.playHomePageCard{
+    border: 0;
+    padding: 0;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1db954;
+    position: absolute;
+    z-index: 2;
+    left: 70%;
+    top: 134px;
+    opacity:0;
+    transition: ease-in-out 300ms;
+    cursor: pointer;
+    
+}
+
+.playHomePageCard:hover{
+    opacity: 1;
+    
+}
+
 
 .bottomConteiner {
     display: flex;
