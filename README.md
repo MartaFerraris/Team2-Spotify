@@ -1,9 +1,8 @@
 # Team2-Spotify
 Progetto svolto dal team SAM(Team2) composto da:
-Stefano Sala
-Adolfo Gomez
-Marta Ferraris
 
+Stefano Sala, Adolfo Gomez, Marta Ferraris
+<hr/>
 Prassi per l'aggiornamento di develop e dei branch:
 
 git fetch su develop => 
