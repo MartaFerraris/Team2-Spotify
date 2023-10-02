@@ -41,7 +41,6 @@ body {
     padding-right: 16px;
     background-color: black;
     grid-template-columns: 344px auto;
-    
     gap: 8px;
 }
 
@@ -58,7 +57,7 @@ body {
     grid-column-end: 2;
 }
 
-.header {
+.headerHomepage {
     width: auto;
     height: 64px;
     border-radius: 7px;
@@ -97,16 +96,20 @@ body {
     overflow-x: hidden;
 }
 
-.sectorPS {
+.sectorHomePS {
     width: 100%;
-    padding-top: 8px;
+    height: auto;
+    padding-top: 36px;
     padding-left: 16px;
     padding-right: 16px;
     display: flex;
     flex-wrap: wrap;
-    overflow-x: hidden;
    flex: 1 1 50%;
 
+}
+
+#sectorHomePS {
+    padding-top: 8px;
 }
 
 .containerPS {
@@ -309,6 +312,7 @@ hr {
     width: auto;
     height: 32px;
     padding: 16px;
+    padding-top: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;

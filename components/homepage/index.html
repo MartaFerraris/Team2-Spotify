@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="homePage.css">
     <link rel="stylesheet" href="../homepage-card/homepageCard.css">
     <link rel="stylesheet" href="../cookie-message/index.css">
+   <link rel="stylesheet" href="../side-navbar/index.css">
 </head>
 
 <body class="homePage">
     <div class="totalBody">
         <div class="gridBody">
-            <header class="header" id="header">
+            <header class="headerHomepage" id="header">
                 <div class="buttonContainer">
                     <div class="arrow">
                         <button class="buttonArrow" type="button">
@@ -39,7 +40,68 @@
                     </div>
                 </div>
             </header>
-            <div class="navAside"></div> <!--Inserire progetto navAside-->
+            <div class="navAside">
+                <nav class="side-navbar">
+                    <div class="header">
+                        <ul>
+                            <li><i class="fa-solid fa-house"></i> Home</li>
+                            <li><i class="fa-solid fa-magnifying-glass"></i>Search</li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <div class="library">
+                            <div class="library-content">
+                                <svg class="svg-lib" height="20px" width="20px" fill="#a7a7a7">
+                                    <path
+                                        d="M 3 22 a 1 1 0 0 1 -1 -1 V 3 a 1 1 0 0 1 2 0 v 18 a 1 1 0 0 1 -1 1 Z M 15.5 2.134 A 1 1 0 0 0 14 3 v 18 a 1 1 0 0 0 1 1 h 6 a 1 1 0 0 0 1 -1 V 6.464 a 1 1 0 0 0 -0.5 -0.866 l -6 -3.464 Z M 9 2 a 1 1 0 0 0 -1 1 v 18 a 1 1 0 1 0 2 0 V 3 a 1 1 0 0 0 -1 -1 Z">
+                                    </path>
+                                </svg>
+                                Your Library
+                
+                                <svg class="svg-lib2" height="20px" width="20px" fill="#a7a7a7">
+                                    <path
+                                        d="M 15.25 8 a 0.75 0.75 0 0 1 -0.75 0.75 H 8.75 v 5.75 a 0.75 0.75 0 0 1 -1.5 0 V 8.75 H 1.5 a 0.75 0.75 0 0 1 0 -1.5 h 5.75 V 1.5 a 0.75 0.75 0 0 1 1.5 0 v 5.75 h 5.75 a 0.75 0.75 0 0 1 0.75 0.75 Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="side-header">
+                            <div class="functions">
+                                <div class="group">
+                                    <div class="group-p">
+                                        <p class="p1">Create your first playlist</p>
+                                        <p class="p2">It's easy, we'll help you</p>
+                                    </div>
+                                    <button class="button">Create Playlist</button>
+                                </div>
+                                <div class="group">
+                                    <div class="group-p">
+                                        <p class="p1">Let's find some podcast to follow.</p>
+                                        <p class="p2">We'll keep you updated on new episodes</p>
+                                    </div>
+                                    <button class="button">Browse podcasts</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side-footer">
+                            <div class="footer-elements">
+                                <div class="links">
+                                    <div>Legal</div>
+                                    <div>Private Center</div>
+                                    <div>Privacy policy</div>
+                                    <div>Cookie settings</div>
+                                    <div>About ads</div>
+                                    <div>Accessibility</div>
+                                    <div>Cookies</div>
+                                </div>
+                            </div>
+                            <div class="language">
+                                <button class="button2">Italiano</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div> <!--Inserire progetto navAside-->
             <div class="cookieMessage">
                 <section class="cookie-view">
                     <article class="cookie-message">
@@ -53,7 +115,7 @@
                 </section>
             </div> <!--Inserire progetto cookieMessage-->
             <div class="mainContent" id="mainContent">
-                <div class="sectorPS">
+                <div class="sectorHomePS" id="sectorHomePS">
                     <div class="containerPS">
                         <div class="flexPS">
                             <a href="" class="PS">Playlist Spotify</a>
@@ -224,7 +286,7 @@
                             </div>
                     </div>
                 </div>
-                <div class="sectorPS">
+                <div class="sectorHomePS">
                     <div class="containerPS">
                         <div class="flexPS">
                             <a href="" class="PS">Focus</a>
