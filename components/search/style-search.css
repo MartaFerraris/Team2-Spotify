@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.homePage {
+  width: 100%;
+  margin: 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  min-width: 800px;
+  overflow-x: hidden;
+  font-family: var(
+    --font-family,
+    CircularSp,
+    CircularSp-Arab,
+    CircularSp-Hebr,
+    CircularSp-Cyrl,
+    CircularSp-Grek,
+    CircularSp-Deva,
+    var(--fallback-fonts, sans-serif)
+  );
+}
+
+.totalBody {
+  width: 100vw;
+  height: 100vh;
+  min-height: inherit;
+  min-width: inherit;
+}
+
+.gridBody {
+  width: auto;
+  height: 97.83%;
+  min-height: inherit;
+  min-width: inherit;
+  display: grid;
+  padding: 8px;
+  padding-right: 16px;
+  background-color: black;
+  grid-template-columns: 344px auto;
+  gap: 8px;
+}
+
+.navAside {
+  width: auto;
+  height: 100%;
+  max-height: 100%;
+  min-height: 483.615px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+
+.headerHomepage {
+  width: auto;
+  height: 64px;
+  border-radius: 7px;
+  background-color: rgba(16, 16, 16, 255);
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 3;
+}
+
+.cookieMessage {
+  width: 100%;
+  height: auto;
+  order: 4;
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 3;
+}
+
+.buttonContainer {
+  width: auto;
+  height: 32px;
+  padding: 16px;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow .buttonArrow {
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.arrow .buttonArrow svg {
+  width: 16px;
+  height: 16px;
+  justify-content: center;
+  padding-top: 3px;
+  cursor: pointer;
+}
+
+.arrow .buttonArrow svg path {
+  width: auto;
+  height: auto;
+  fill: rgba(156, 156, 156, 255);
+  align-self: center;
+}
+
+.headerButton {
+  width: 210px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+}
+
+.iscriviti {
+  width: 55.271px;
+  height: 32px;
+  padding-left: 0;
+  padding-right: 80px;
+  border: 0px;
+  font-weight: 650;
+  font-size: 16px;
+  color: rgba(156, 156, 156, 255);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.iscriviti:hover {
+  font-size: 16.5px;
+  color: rgb(224, 224, 224);
+  font-size: 16.5px;
+}
+
+.accedi {
+  width: 116.208px;
+  height: 48px;
+  border-radius: 30px;
+  font-weight: 650;
+  font-size: 16px;
+  padding: 0;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.accedi:hover {
+  width: 121.208px;
+  height: 53px;
+  font-size: 16px;
+}

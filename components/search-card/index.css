@@ -16,13 +16,14 @@
     CircularSp-Deva,
     var(--fallback-fonts, sans-serif)
   );
+
+  overflow-x: hidden;
 }
 
 .search-card {
   background-color: #121212;
   height: auto;
-  margin-top: 16px;
-  padding-top: 30px;
+  padding-top: 20px;
   /*   padding-block: 16px;
  */
 }
