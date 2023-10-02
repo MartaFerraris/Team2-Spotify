@@ -12,7 +12,6 @@ body {
     border-radius: 7px;
     margin: 10px;
     padding: 16px;
-    padding-bottom: 100px;
     flex-direction: row;
     width: auto;
     height: 100%;
@@ -34,19 +33,18 @@ body {
 
 .cardConteiner {
     width: inherit;
-    height: 191.667px;
+    height: auto;
 
 }
 
 .onlyPadding {
     width: 100%;
     height: 0;
-    padding-bottom: 191.667px;
+    padding-bottom: 170.667px;
 }
 
 .onlyWidth {
     width: 100%;
-    height: 0;
     position: relative;
 
 }
@@ -56,6 +54,7 @@ body {
     height: auto;
     border-radius: 7px;
     z-index: 1;
+    display: block;
 }
 
 .playHomePageCard {
@@ -70,8 +69,8 @@ body {
     background-color: #1db954;
     position: absolute;
     z-index: 2;
-    left: 70%;
-    top: 134px;
+    right: 0;
+    bottom: 0;
     opacity: 0;
     transition: ease-in-out 300ms;
     cursor: pointer;
@@ -87,8 +86,8 @@ body {
 .bottomConteiner {
     display: flex;
     justify-content: flex-start;
-    width: 191.667px;
-    height: 74.385px;
+    width: 100%;
+    height: 50px;
 }
 
 .titleCardConteiner {
@@ -110,7 +109,7 @@ body {
 }
 
 .descriptionCard {
-    width: 165px;
+    width: 130px;
     height: 43px;
     overflow: hidden;
     text-overflow: ellipsis;
