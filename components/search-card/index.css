@@ -1,0 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.body-search {
+  font-size: 16px;
+  color: white;
+  font-family: var(
+    --font-family,
+    CircularSp,
+    CircularSp-Arab,
+    CircularSp-Hebr,
+    CircularSp-Cyrl,
+    CircularSp-Grek,
+    CircularSp-Deva,
+    var(--fallback-fonts, sans-serif)
+  );
+}
+
+.search-card {
+  background-color: #121212;
+  height: auto;
+  margin-top: 16px;
+  padding-top: 30px;
+  /*   padding-block: 16px;
+ */
+}
+
+.content {
+  padding-inline: 24px;
+}
+
+.sfoglia {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.cards-space {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  width: 100%;
+  border-radius: 8px;
+  /*   justify-content: space-between;
+ */
+}
+.card {
+  background-color: rgb(39, 133, 106);
+  font-weight: bold;
+  flex: 0 0 calc(12.5% - 20px);
+  border-radius: 8px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+  min-width: 148px;
+  min-height: 148px;
+  /*   mettere max e min width;
+ */
+}
+@media (max-width: 1800px) {
+  .card {
+    flex-basis: calc(14.2% - 20px);
+  }
+}
+@media (max-width: 1600px) {
+  .card {
+    flex-basis: calc(16.6% - 20px);
+  }
+}
+@media (max-width: 1200px) {
+  .card {
+    flex-basis: calc(20% - 20px);
+  }
+}
+@media (max-width: 1000px) {
+  .card {
+    flex-basis: calc(25% - 20px);
+  }
+}
+@media (max-width: 800px) {
+  .card {
+    flex-basis: calc(33.33% - 20px);
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+.title {
+  display: block;
+  position: relative;
+  font-size: 24px;
+  padding: 24px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  -webkit-transform: rotate(25deg) translate(18%, -2%);
+  transform: rotate(25deg) translate(18%, -2%);
+}
+
+.list-container {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 32px 40px 32px;
+}
+.lista {
+  margin: 24px 32px 0px 0px;
+  width: 182px;
+  color: #a7a7a7;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+li:first-child {
+  color: white;
+}
+hr {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  border: 0px;
+  border-block-start: 1px solid var(--decorative-subdued, #dedede);
+  margin-block-end: var(--spacer-1, 24px);
+  margin-block-start: var(--spacer-1, 24px);
+}
+.footer-info {
+  margin: 24px 32px 24px 0px;
+  padding-bottom: 68px;
+  color: #a7a7a7;
+  padding-top: 16px;
+}
