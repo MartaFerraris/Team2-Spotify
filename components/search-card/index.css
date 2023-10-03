@@ -9,7 +9,7 @@
   font-size: 38px;
   overflow-y: scroll;
   overflow-x: hidden;
-  padding-left: 10px;
+  padding-left: 20px;
   font-size: 16px;
   color: white;
   font-family: var(
@@ -22,7 +22,6 @@
     CircularSp-Deva,
     var(--fallback-fonts, sans-serif)
   );
-  /*  */
   overflow-x: hidden;
 }
 .body-search::-webkit-scrollbar {
@@ -118,39 +117,4 @@ img {
   position: absolute;
   -webkit-transform: rotate(25deg) translate(18%, -2%);
   transform: rotate(25deg) translate(18%, -2%);
-}
-
-.list-container {
-  margin-top: 72px;
-  display: flex;
-  flex-direction: row;
-  padding: 8px 32px 40px 32px;
-}
-.lista {
-  margin: 24px 32px 0px 0px;
-  width: 182px;
-  color: #a7a7a7;
-}
-
-li {
-  list-style: none;
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
-li:first-child {
-  color: white;
-}
-hr {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  border: 0px;
-  border-block-start: 1px solid var(--decorative-subdued, #dedede);
-  margin-block-end: var(--spacer-1, 24px);
-  margin-block-start: var(--spacer-1, 24px);
-}
-.footer-info {
-  margin: 24px 32px 24px 0px;
-  padding-bottom: 68px;
-  color: #a7a7a7;
-  padding-top: 16px;
 }
