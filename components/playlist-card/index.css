@@ -4,16 +4,20 @@
 }
 
 .main-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto auto;
+    gap: 8px;
     background-color: black;
+    height: 107vh;
+    overflow: hidden;
 }
 
 .object-sidenav {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    /* position: sticky; */
+    position: sticky;
 }
 
 #playlist-page {
@@ -21,9 +25,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    height: 100%;
-    padding: 1vmax;
-    /* background-color: white; */
+    padding: 5% 1% 1% 1%;
     background-image: linear-gradient(#90b0c0 0% 25%, transparent 40% 100%);
     background-color: #121212;
     position: relative;
@@ -31,6 +33,12 @@
     margin: 8px;
     border-radius: 5px;
     color: #ffffff;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+#playlist-page::-webkit-scrollbar {
+    width: 10px;
 }
 
 .right-sidebar {
@@ -110,19 +118,27 @@
 }
 
 main .playlist-section {
-    display: block;
-    position: absolute;
-    margin-top: 50%;
+    display: inline-block;
+    position: relative;
     height: 100%;
     width: 50%;
     padding: 0px 24px;
+    transform: all 0.2s ease-in-out;
 }
 
 #button-head {
     display: flex;
-    justify-content: flex-start;
+    height: 1vh;
+    width: auto;
     align-items: center;
-    overflow: hidden;
+    padding-top: 4vh;
+    /* display: grid;
+    grid-template-columns: 1% 1fr 1fr 1fr;
+    height: 1vh;
+    width: auto;
+    align-items: center;
+    padding-top: 4vh;
+    justify-content: start; */
 }
 
 .player-button {
@@ -131,65 +147,91 @@ main .playlist-section {
     border-radius: 50%;
     border: none;
     background-color: #1ed760;
-    margin-right: 0.8vw;
+    cursor: pointer;
+    margin: 0.8vw;
+    transition: transform 0.2s ease;
 }
 
-.player-button div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.player-button:hover, .player-button:active {
-    width: 58px;
-    height: 58px;
-    transition: all 0.2s ease-in-out;
+.player-button:hover {
+    transform: scale(1.1);
 }
 
 .like-button {
     border: none;
     background-color: transparent;
-    margin-right: 0.8vw;
+    cursor: pointer;
+    padding-left: 0.5vw;
+    transition: transform 0.2s ease;
 }
 
-.like-button:hover, .like-button:active {
-    width: 34px;
-    height: 34px;
-    transition: all 0.2s ease-in-out;
+.like-button:hover {
+    transform: scale(1.1);
 }
 
 .three-dots {
+    padding-left: 1.5vw;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
-.three-dots:hover,
-.three-dots:active {
-    width: 34px;
-    height: 34px;
-    transition: all 0.2s ease-in-out;
+.three-dots:hover {
+    transform: scale(1.1);
 }
 
-.table-menú {
-    table-layout: auto;
-    margin-top: 2vh;
-    border-collapse: collapse;
+/* .table-container {
+    padding: 4vh 0.5vw;
+} */
+
+/* .table-menu {
+    position: relative;
+    height: 100%;
     width: 100%;
-    border-spacing: 10px;
+    border-collapse: collapse;
+    text-align: left;
 }
 
 .table-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} */
+
+/* .table-menu {
+    display: grid;
+    grid-template-columns: [index] 16px [first] 6fr [var1] 4fr [var2] 3fr [last] minmax(120px, 1fr);
+    grid-template-rows: auto;
+    padding: 4vh 1vw;
+}
+
+.table-title {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 10vw;
+    width: 100%;
+} */
+
+
+.table-menu {
     table-layout: auto;
+    margin-top: 5vh;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     text-align: left;
+    padding: 1vh 1vw;
     border-bottom: 1px solid black;
 }
 
-.table-row {
-    padding-top: 10px;
-}
-
 .table-numb {
-    padding-left: 1vw;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .like {
@@ -204,8 +246,8 @@ main .playlist-section {
     visibility: hidden;
 }
 
-.numbers {
-    padding-left: 1vw;
+.table-row {
+    padding: 2vmax;
 }
 
 .table-row:first-child {
@@ -217,30 +259,30 @@ main .playlist-section {
     opacity: 0.5;
 }
 
-/* .numbers svg {
-    display: none;
-} */
-
-/* .number::before {
-
-    &:hover {
-        display: none;
-        cursor: none;
-    }
+.numbers-svg {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1vh;
 }
 
-.svg-hover:hover {
-    &::before {
-        display: block;
-        cursor: pointer;
-    }
-} */
+.number {
+    display: flex;
+    padding-left: 0.5vw;
+    z-index: 1;
+} 
+
+.svg-hover {
+    display: flex;
+    margin-right: 1vw;
+    z-index: 2;
+}
 
 .song {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0.5%;
+    padding-left: 3vw;
 }
 
 .song img {
@@ -252,6 +294,7 @@ main .playlist-section {
 .a-songs {
     display: flex;
     flex-direction: column;
+    width: 15vw;
 }
 
 .a-song1 {
@@ -261,23 +304,20 @@ main .playlist-section {
     color: #b3b3b3;
 }
 
-.a-song1:hover {
-    text-decoration-line: underline;
-    color: white;
-}
-
 .a-song2 {
     font-size: 13px;
     text-decoration-line: none;
     color: #b3b3b3;
 }
 
+.a-song1:hover,
 .a-song2:hover {
     text-decoration-line: underline;
     color: #b3b3b3;
 }
 
 .album {
+    width: 15vw;
     color: #b3b3b3;
     font-size: 13px;
 }
@@ -293,5 +333,13 @@ main .playlist-section {
 }
 
 .time-reproduce {
+    width: 15vw;
     text-align: center;
+}
+
+.cookie-message {
+    display: grid;
+    position: relative;
+    z-index: 1;
+    margin: 0 3%;
 }
