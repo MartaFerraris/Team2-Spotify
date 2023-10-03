@@ -57,11 +57,16 @@ li {
   height: 40px;
 }
 
-li:first-child {
+li a{
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+a:first-child {
   color: white;
 }
 
-li:hover {
+a:hover {
   color: white;
 }
 
