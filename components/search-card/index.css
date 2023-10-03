@@ -3,34 +3,118 @@
   padding: 0px;
   box-sizing: border-box;
 }
-body {
-  font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
-    CircularSp-Grek, CircularSp-Deva;
-  font-size: 16px;
-  font-weight: 900;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
+.body-search {
   background-color: #121212;
+  color: white;
+  font-size: 38px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-left: 20px;
+  font-size: 16px;
+  color: white;
+  font-family: var(
+    --font-family,
+    CircularSp,
+    CircularSp-Arab,
+    CircularSp-Hebr,
+    CircularSp-Cyrl,
+    CircularSp-Grek,
+    CircularSp-Deva,
+    var(--fallback-fonts, sans-serif)
+  );
+  overflow-x: hidden;
+}
+.body-search::-webkit-scrollbar {
+  width: 10px;
 }
 
-.header {
-  display: flex;
-  height: 64px;
-  align-items: center;
-}
-.header-account {
-  display: flex;
-  margin-left: auto;
+.body-search::-webkit-scrollbar-thumb {
+  background-color: rgb(100, 100, 100);
 }
 
-.button {
-  border: 0px;
+.body-search::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.search-card {
+  height: auto;
+  padding-top: 20px;
+  /*   padding-block: 16px;
+ */
+}
+
+.sfoglia {
   font-weight: bold;
-  border-radius: 500px;
-  background-color: #fff;
-  min-block-size: 32px;
-  padding-block: 4px;
-  padding-inline: 16px;
-  align-self: self-start;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.cards-space {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  width: 100%;
+  border-radius: 8px;
+  /*   justify-content: space-between;
+ */
+}
+.card {
+  background-color: rgb(39, 133, 106);
+  font-weight: bold;
+  flex: 0 0 calc(12.5% - 20px);
+  border-radius: 8px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+  min-width: 148px;
+  min-height: 148px;
+  /*   mettere max e min width;
+ */
+}
+@media (max-width: 1800px) {
+  .card {
+    flex-basis: calc(14.2% - 20px);
+  }
+}
+@media (max-width: 1600px) {
+  .card {
+    flex-basis: calc(16.6% - 20px);
+  }
+}
+@media (max-width: 1200px) {
+  .card {
+    flex-basis: calc(20% - 20px);
+  }
+}
+@media (max-width: 1000px) {
+  .card {
+    flex-basis: calc(25% - 20px);
+  }
+}
+@media (max-width: 800px) {
+  .card {
+    flex-basis: calc(33.33% - 20px);
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+.title {
+  display: block;
+  position: relative;
+  font-size: 24px;
+  padding: 24px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  -webkit-transform: rotate(25deg) translate(18%, -2%);
+  transform: rotate(25deg) translate(18%, -2%);
 }
