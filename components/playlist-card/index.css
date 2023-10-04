@@ -12,12 +12,12 @@
     overflow: hidden;
 }
 
-.object-sidenav {
+/* .object-sidenav {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     position: sticky;
-}
+} */
 
 #playlist-page {
     font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva;
@@ -315,10 +315,10 @@ main .playlist-section {
     text-align: center;
 }
 
-.cookie-message {
+/* .cookie-message {
     display: contents;
     flex-direction: row;
     overflow: hidden;
     position: fixed;
     z-index: 1;
-}
+} */
