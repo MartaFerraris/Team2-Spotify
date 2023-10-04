@@ -1,124 +1,125 @@
 body {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-x: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: scroll;
 }
 
 /*proprietà da mettere nella hompage per far funzionare le card*/
 
 .cardHomePage {
-    display: flex;
-    border: 0;
-    border-radius: 7px;
-    margin: 10px;
-    padding: 16px;
-    flex-direction: row;
-    width: auto;
-    height: 100%;
-    background-color: rgb(26, 26, 26);
-    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
-    ;
-    transition: background-color 300ms;
-    cursor: pointer;
+  display: flex;
+  border: 0;
+  border-radius: 7px;
+  margin: 10px;
+  padding: 16px;
+  flex-direction: row;
+  width: auto;
+  height: 100%;
+  background-color: rgb(26, 26, 26);
+  font-family: var(
+    --font-family,
+    CircularSp,
+    CircularSp-Arab,
+    CircularSp-Hebr,
+    CircularSp-Cyrl,
+    CircularSp-Grek,
+    CircularSp-Deva,
+    var(--fallback-fonts, sans-serif)
+  );
+  transition: background-color 300ms;
+  cursor: pointer;
 }
 
 .cardHomePage:hover {
-    background-color: rgb(48, 48, 48);
+  background-color: rgb(48, 48, 48);
 }
 
 .upperSectionCard {
-    width: inherit;
-    height: inherit;
+  width: inherit;
+  height: inherit;
 }
 
 .cardConteiner {
-    width: inherit;
-    height: auto;
-
+  width: inherit;
+  height: auto;
 }
 
 .onlyPadding {
-    width: 100%;
-    padding-bottom: 16px;
+  width: 100%;
+  padding-bottom: 16px;
 }
 
 .onlyWidth {
-    width: 100%;
-    position: relative;
-
+  width: 100%;
+  position: relative;
 }
 
 .imgModule {
-    width: 100%;
-    height: auto;
-    border-radius: 7px;
-    z-index: 1;
-    display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  z-index: 1;
+  display: block;
 }
 
 .playHomePageCard {
-    border: 0;
-    padding: 0;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1db954;
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: ease-in-out 300ms;
-    cursor: pointer;
-
+  border: 0;
+  padding: 0;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1db954;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: ease-in-out 300ms;
+  cursor: pointer;
 }
 
 .playHomePageCard:hover {
-    opacity: 1;
-
+  opacity: 1;
 }
 
-
 .bottomConteiner {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 50px;
 }
 
 .titleCardConteiner {
-
-    width: 120.385px;
-    height: 29.594px;
+  width: 120.385px;
+  height: 29.594px;
 }
 
 .TCC2 {
-    width: 140.385px;
-    height: 29.594px;
-
+  width: 140.385px;
+  height: 29.594px;
 }
 
 .TCC2 p {
-    color: rgba(252, 252, 252, 255);
-    font-size: 15px;
-    font-weight: 600;
+  color: rgba(252, 252, 252, 255);
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .descriptionCard {
-    width: 130px;
-    height: 43px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  width: 130px;
+  height: 43px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .descriptionCard p {
-    color: rgba(155, 155, 155, 255);
-    font-size: 13px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.5;
-    height: 43px;
+  color: rgba(155, 155, 155, 255);
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  height: 43px;
 }
