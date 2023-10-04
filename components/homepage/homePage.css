@@ -33,7 +33,7 @@ body {
 
 .gridBody {
     width: auto;
-    height: 97.83%;
+    height: 100%;
     min-height: inherit;
     min-width: inherit;
     display: grid;
