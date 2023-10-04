@@ -10,7 +10,7 @@
  */ /*   grid-template-rows: 1fr auto auto;
  */
   background-color: black;
-  /*   height: 106vh;
+  /*   height: 100%;
  */
   overflow: hidden;
 }
@@ -47,6 +47,7 @@
   max-height: 100vh;
   overflow-y: auto;
 }
+
 
 #playlist-page::-webkit-scrollbar {
   width: 10px;
@@ -325,13 +326,14 @@ main .playlist-section {
   text-align: center;
 }
 
-/* .cookie-message {
+ .cookie-message {
   display: contents;
   flex-direction: row;
   overflow: hidden;
   position: fixed;
   z-index: 1;
-} */
+  font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+} 
 
 /* //////////////////////////////// */
 /* * {
@@ -376,7 +378,7 @@ body {
 
 .gridBody {
   width: auto;
-  height: 97.83%;
+  height: 100%;
   min-height: inherit;
   min-width: inherit;
   display: grid;
